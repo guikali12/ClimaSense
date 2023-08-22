@@ -1,0 +1,100 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#b51f1a,#f98ef6);
+}
+
+.title{
+    font-size: 85px;
+    color: azure;
+    animation: pulsate 2s;
+}
+
+.subtitle{
+  color: azure;
+  font-style: sans-serif;
+}
+
+@keyframes pulsate {
+    0% {
+      transform: scale(1);
+      color: #b51f1a;
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.containerInput{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px #000;
+}
+
+.containerInput input{
+ background-color: transparent;
+ border: 0;
+ font-size: 20px;
+ color: white;
+ outline: none;
+ margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+  color: rgb(243, 206, 206);
+}
+
+.Search{
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s ;
+}
+
+.Search:hover{
+  transform: scale(1.2);
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 500px;
+  border-radius: 8px;
+}
+
+.main h3{
+  margin: 20px 0;
+  font-size: 17px;
+}
+
+
+@media (max-widht: 620px){
+  .title{
+    font-size: 60px;
+  }
+
+  .main h3{
+    font-size: 28px;
+  }
+
+  .main{
+    width: 80%;
+    min-height: 250px;
+  }
+}
+  
